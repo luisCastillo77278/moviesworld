@@ -25,7 +25,7 @@ body{
     width: 100%;
     position: fixed;
     height: 84px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .d-flex{
@@ -136,60 +136,72 @@ body{
     display: none;
 }
 
+/* ===== main ====== */
 
 #main{
     grid-area: body;
-    margin: 85px 0 20px 0;
+    margin: 84px 0 0 0;
 }
 
-.main__estrenos{
-    width: 95%;
+.section,
+.banner{
+    height: 40vh;
+    /* width: 95%; */
 }
 
-.main__head{
-    padding: 10px;
-}
-.main__title{
-    font-weight: 500;
-    font-size: 1.4rem;
+.banner{
+    position: relative;
 }
 
-.content{
-    margin-bottom: 10px;
+.banner .banner__cortina{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 40vh;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
 }
 
-.content__header{
-    width: 95%;
-    margin: 0 auto;
-    padding: 10px;
+.banner .banner__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
 }
 
-.content__body{
-    width: 95%;
+.section__titulo{
+    font-size: 1.3rem;
 }
 
-.card{
-    width: 44%;
-    margin: 6px;
-    background-color:#d0d3d4;
-    border-radius: 5px 5px 5px 5px;
+.section__desc{
+    text-align: center;
 }
 
-.card img{
-    width: 100%; 
-    border-radius: 5px 5px 0px 0px;
+.section__img--w100{
+    width: 100%;
+    height: 100%;
 }
 
-.content__header-title,
-.content__header-link{
-    font-size: 1.4rem;
-    font-weight: 500;
+.section__img{
+    width: 100%;
+    height: 70%;
 }
 
-.card__body{
-    padding: 5px;
-    font-size: 1.1rem;
+.section__content{
+    width: 100%;
+    height: 30%;
 }
+
+.flex-direction-reverse{
+    flex-direction: row-reverse;
+}
+
+/* ===== main ====== */
 
 #footer{
     grid-area: footer;
@@ -200,7 +212,28 @@ body{
     height: 50px;
 }
 
+
 @media all and (min-width: 755px){
+
+    .section__img,
+    .section__content{
+        width: 50%;
+        height: 100%;
+    }
+    
+    /* .section__content{
+        width: 50%;
+        height: 100%;
+    } */
+
+    .section__titulo{
+        font-size: 2.3rem;
+    }
+
+    .section__desc{
+        font-size: 1.3rem;
+    }
+
     .nav__button--hidden{
         display: none;
     }
@@ -209,28 +242,8 @@ body{
         display: flex;
     }
 
-    .nav{
-        grid-template-columns: 1fr 2fr;
-    }
-
     .flex-direction{
         flex-direction: row;
-    }
-
-    .card{
-        width: 18%;
-    }
-
-    .carousel,
-    .carousel img{
-        height: 50vh;
-    }
-
-    .carousel__title,
-    .carousel__body,
-    .carousel__groups{
-        display: block;
-        width: 50%;
     }
 
     
