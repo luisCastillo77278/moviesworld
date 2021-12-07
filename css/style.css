@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
-.anchor__link{
+/* .anchor__link{
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
@@ -34,10 +34,14 @@
 
 .color-dark-light{
     color: #191c1f;
+} */
+
+.margin-top-70{
+    margin-top: 70px;
 }
 
 .banner{
-    height: 40vh;
+    height: 50vh;
 }
 
 .banner__opacity{
@@ -46,9 +50,23 @@
 
 .banner img{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 .bg-purple{
     background: linear-gradient( -90deg, #FF3366,  #6600FF 90%);
+}
+
+.bg-dark-bold{
+    background-color: #000;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+i{
+    font-size: 29px;
 }
