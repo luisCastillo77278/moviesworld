@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-body{
-    overflow-x: hidden;    
-}
-
 .anchor__link{
     text-decoration: none;
     transition: all 0.3s ease-in;
@@ -18,62 +7,6 @@ body{
 
 .anchor__link:hover{
     color:#6600FF;
-}
-
-.container{
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "body"
-    "footer";
-}
-
-#header{
-    grid-area: nav;
-    width: 100%;
-    position: fixed;
-    height: 84px;
-    z-index: 2;
-}
-
-.d-flex{
-    display: flex;
-}
-
-.flex-direction-reverse{
-    flex-direction: row-reverse;
-}
-
-.flex-direction{
-    flex-direction: column;
-}
-
-.flex-direction-column{
-    flex-direction: column;
-}
-
-.justify-content{
-    justify-content: center;
-}
-
-.justify-content-between{
-    justify-content: space-between;
-}
-
-.align-items{
-    align-items: center;
-}
-
-.justify-content-end{
-    justify-content: flex-end;
-}
-
-.flex-grow-1{
-    flex-grow: 1;
-}
-
-.flex-wrap{
-    flex-wrap: wrap;
 }
 
 .purple-bg{
@@ -103,216 +36,19 @@ body{
     color: #191c1f;
 }
 
-.margin-auto{
-    margin: 0 auto;
+.banner{
+    height: 40vh;
 }
 
-.nav{
-    width: 95%;
-    padding: 0 5px;
+.banner__opacity{
+    background-color:  rgb(0,0,0,0.6);
 }
 
-.nav__brand{
-    height: 80px;
-    margin: 2px;
-}
-
-.nav__logo img{
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-}
-
-.nav__titulo{
-    margin-left: 7px;
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-.nav__button-icon i{
-    font-size: 1.6rem;
-}
-
-.nav__links{
-    list-style: none;
-}
-
-.nav__link-item{
-    padding: 5px;
-}
-
-.nav__link-routes{
-    text-decoration: none;
-    color: #d0d3d4;
-}
-
-.nav__link-routes--active{
-    color: #FFFFFF;
-}
-
-.nav__link-routes i{
-    font-size: 2.4rem;
-}
-
-.nav__links--hidden{
-    display: none;
-}
-
-.content{
-    width: 95%;
-}
-
-/* ===== main ====== */
-
-#main{
-    grid-area: body;
-    margin: 84px 0 0 0;
-}
-
-.section,
-.banner,
-.carousel{
-    height: 50vh;
-}
-
-.banner,
-.carousel{
-    position: relative;
-    overflow: hidden;
-}
-
-.opacity-05{
-    opacity: 0.5;
-}
-
-.opacity-06{
-    opacity: 0.6;
-}
-
-
-.banner__cortina{
-    position: absolute;
-    background-color: #000;
+.banner img{
     width: 100%;
-    height: 50vh;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 40vh;
 }
 
-.banner__content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-}
-
-.section__titulo{
-    font-size: 1.3rem;
-}
-
-.section__desc{
-    text-align: center;
-}
-
-.section__img--w100{
-    width: 100%;
-    height: 100%;
-}
-
-.section__img{
-    width: 100%;
-    height: 70%;
-}
-
-.section__content{
-    width: 100%;
-    height: 30%;
-}
-
-.content{
-    width: 95%;
-    margin-top: 10px;
-}
-
-
-
-
-/* ===== main ====== */
-
-#footer{
-    grid-area: footer;
-}
-
-.footer__copyright{
-    text-align: center;
-    height: 50px;
-}
-
-@keyframes zoom {
-    from{
-        transform: scale(1,1);
-    }
-    to{
-        transform: scale(1.1, 1.1);
-    }
-}
-
-@media all and (min-width: 500px){
-    
-}
-
-@media all and (min-width: 755px){
-
-    
-
-    .carousel .section__img--w100{
-        animation-name: zoom;
-        animation-duration: 5s;
-        animation-iteration-count: 1;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards; 
-    }
-
-    .section__img{
-        transition: all 0.5s ease-in-out;
-    }
-
-    .section__img:hover{
-        transform: scale(1.05);
-        border-radius: 5px;
-    }
-
-    .section__img,
-    .section__content{
-        width: 50%;
-        height: 100%;
-    }
-    
-    .section__titulo{
-        font-size: 2.3rem;
-    }
-
-    .section__desc{
-        font-size: 1.3rem;
-    }
-
-    .nav__button--hidden{
-        display: none;
-    }
-
-    .nav__links--hidden{
-        display: flex;
-    }
-
-    .flex-direction{
-        flex-direction: row;
-    }
-
-    
+.bg-purple{
+    background: linear-gradient( -90deg, #FF3366,  #6600FF 90%);
 }

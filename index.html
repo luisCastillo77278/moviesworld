@@ -1,169 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link 
+      rel="stylesheet"
+      href="css/style.css"
+      >
     <title>Inicio</title>
   </head>
   <body>
-    <div class="container">
-      <div id="header" class="purple-bg">
-        <div class="nav d-flex margin-auto">
-          <div
-            class="nav__brand d-flex flex-direction-row align-items flex-grow-1"
-          >
-            <div class="nav__logo">
-              <img src="assets/images/icon-purple.png" alt="moives world" />
-            </div>
-            <div class="nav__titulo">movies world</div>
-          </div>
 
-          <div class="nav__button nav__button--hidden d-flex align-items">
-            <div class="nav__button-icon">
-              <i class="fas fa-bars"></i>
+    <div class="container-fluid bg-purple">
+      <div class="container-md">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+          <div class="container-md">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img 
+                src="assets/images/icon-purple.png" 
+                alt="" 
+                width="45" 
+                height="45" 
+                class="d-inline-block 
+                      align-text-top
+                      me-2">
+              Navbar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Peliculas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Animes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estrenos</a>
+                </li>
+              </ul>
+              <form class="d-flex ps-lg-2">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+              </form>
             </div>
           </div>
-
-          <ul class="nav__links d-flex align-items nav__links--hidden">
-            <li class="nav__link-item">
-              <a
-                class="nav__link-routes nav__link-routes--active"
-                href="index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="peliculas.html">Peliculas</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="series.html">Series</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="animes.html">Animes</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="estrenos.html">En estreno</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="contacto.html">Conctacto</a>
-            </li>
-          </ul>
-        </div>
+        </nav>
       </div>
-      
-      <div id="main">
-        
-        <div class="section">
-          <div class="banner">
-            <div class="banner__cortina opacity-06"></div>
-            <img class="section__img--w100" src="assets/images/banner2.jpg" alt="">
-            <div class="banner__content flex-wrap d-flex flex-direction-column align-items justify-content">
-              <div class="section__titulo">Bienvienido</div>
-              <div class="section__desc">Moviesword es un sitio ideal para ver películas y series online. Nuestro sistema se preocupa por tener lo último del cine en calidad full HD.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section
+    </div>
+    
+    <div class="container-fluid p-0">
+      <div class="banner position-relative">
+        <div class="banner__opacity 
+        position-absolute 
+        top-0 
+        start-0
+        w-100
+        h-100"></div>
+        <img src="assets/images/banner2.jpg" alt="">
+        <div 
+          class="d-flex
+          position-absolute
+          top-0
+          start-0
+          text-white
           d-flex
-          flex-wrap
-          align-items 
-          margin-auto
-          dark-ligh-bg">
-          <img class="section__img" src="assets/images/venom2_portada.jpeg" alt="">
-          <div class="section__content 
-            flex-direction-column
-            d-flex
-            justify-content
-            align-items">
-            <div class="section__titulo">Las mejores peliculas</div>
-            <div class="section__desc">Encuentra las mejores series que más te gusten</div>
-            <a class="anchor__link color-white" href="peliculas.html">ver más</a>
-          </div>
-        </div>
-        <div class="section
-          d-flex
-          flex-wrap
-          align-items 
-          margin-auto 
-          flex-direction-reverse">
-          <img class="section__img" src="assets/images/wandavision.jpeg" alt="">
-          <div class="section__content 
-            flex-direction-column
-            d-flex
-            justify-content
-            align-items">
-            <div class="section__titulo">Las mejores series</div>
-            <div class="section__desc">Encuentra las mejores peliculas que más te gusten</div>
-            <a class="anchor__link color-dark" href="series.html">ver más</a>
-          </div>
-        </div>
-        <div class="section
-          d-flex
-          flex-wrap
-          align-items 
-          margin-auto
-          dark-ligh-bg">
-          <img class="section__img" src="assets/images/kimetsu_actualizar.jpg" alt="">
-          <div class="section__content 
-            flex-direction-column
-            d-flex
-            justify-content
-            align-items">
-            <div class="section__titulo">Los mejores animes</div>
-            <div class="section__desc">Encuentra los mejores animes que más te gusten</div>
-            <a class="anchor__link color-white" href="animes.html">ver más</a>
-          </div>
-        </div>
-        
-      </div>
-
-      <div id="footer" class="dark-bg">
-        <div class="nav d-flex flex-direction align-items margin-auto">
-          <div class="nav__brand d-flex align-items flex-grow-1">
-            <div class="nav__logo">
-              <img src="assets/images/icon-darck.png" alt="movies world" />
-            </div>
-            <div class="nav__titulo">movies world</div>
-          </div>
-
-          <ul class="nav__links d-flex">
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="
-            footer__copyright
-            dark-ligh-bg
-            d-flex
-            align-items
-            justify-content
+          flex-column
+          justify-content-center
+          align-items-center
+          w-100
+          h-100
+          px-5
+          text-center
           "
-        >
-          <p>movies world &copy; copyright 2021</p>
+          >
+          <div>Bienvienido</div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptates.</div>
         </div>
       </div>
     </div>
+
+    
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"
+    ></script>
   </body>
 </html>
