@@ -37,6 +37,10 @@
     display: flex;
 }
 
+.flex-direction-reverse{
+    flex-direction: row-reverse;
+}
+
 .flex-direction{
     flex-direction: column;
 }
@@ -152,6 +156,10 @@
     display: none;
 }
 
+.content{
+    width: 95%;
+}
+
 /* ===== main ====== */
 
 #main{
@@ -160,25 +168,37 @@
 }
 
 .section,
-.banner{
-    height: 40vh;
+.banner,
+.carousel{
+    height: 50vh;
 }
 
-.banner{
+.banner,
+.carousel{
     position: relative;
+    overflow: hidden;
 }
 
-.banner .banner__cortina{
+.opacity-05{
+    opacity: 0.5;
+}
+
+.opacity-06{
+    opacity: 0.6;
+}
+
+
+.banner__cortina{
     position: absolute;
     background-color: #000;
     width: 100%;
-    height: 40vh;
-    opacity: 0.6;
+    height: 50vh;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
-.banner .banner__content{
+.banner__content{
     position: absolute;
     top: 0;
     left: 0;
@@ -207,15 +227,18 @@
     height: 70%;
 }
 
-
 .section__content{
     width: 100%;
     height: 30%;
 }
 
-.flex-direction-reverse{
-    flex-direction: row-reverse;
+.content{
+    width: 95%;
+    margin-top: 10px;
 }
+
+
+
 
 /* ===== main ====== */
 
@@ -228,14 +251,37 @@
     height: 50px;
 }
 
+@keyframes zoom {
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+@media all and (min-width: 500px){
+    
+}
 
 @media all and (min-width: 755px){
+
+    
+
+    .carousel .section__img--w100{
+        animation-name: zoom;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards; 
+    }
+
     .section__img{
         transition: all 0.5s ease-in-out;
     }
 
     .section__img:hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
         border-radius: 5px;
     }
 
