@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -10,97 +19,320 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Peliculas</title>
+    <title>Series</title>
   </head>
   <body>
-    <div class="container">
-      <div id="header" class="purple-bg">
-        <div class="nav d-flex margin-auto">
-          <div
-            class="nav__brand d-flex flex-direction-row align-items flex-grow-1"
-          >
-            <div class="nav__logo">
-              <img src="assets/images/icon-purple.png" alt="moives world" />
+    <!-- navbar -->
+    <div class="container-fluid bg-purple">
+      <div class="container-md">
+        <nav
+          class="
+            navbar navbar-expand-lg navbar-dark
+            bg-purple
+            fixed-top
+            rounded-bottom
+          "
+        >
+          <div class="container-md">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img
+                src="assets/images/icon-purple.png"
+                alt=""
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top me-2"
+              />
+              Moviesworld
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Peliculas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Animes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estrenos</a>
+                </li>
+              </ul>
+              <form class="d-flex ps-lg-2">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-dark" type="submit">
+                  Search
+                </button>
+              </form>
             </div>
-            <div class="nav__titulo">movies world</div>
           </div>
+        </nav>
+      </div>
+    </div>
 
-          <div class="nav__button nav__button--hidden d-flex align-items">
-            <div class="nav__button-icon">
-              <i class="fas fa-bars"></i>
+    <!-- carousel -->
+    <div class="container-fluid px-0 margin-top-70">
+      <div class="px-1 py-1">
+        <div class="h3 text-secondary text-center">Estrenos de series</div>
+      </div>
+      <div
+        id="carouselExampleControlsNoTouching"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- carousel -->
+    
+    <!-- main -->
+    <div class="container-fluid px-0 mb-5">
+      <div class="py-2 px-1">
+        <div class="h4 text-secondary">Peliculas actualizadas</div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-1 mx-1">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/justicia.jpg"
+              class="card-img-top h-100"
+              alt="Wrath of man"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wrath of man</h5>
             </div>
           </div>
-
-          <ul class="nav__links d-flex align-items nav__links--hidden">
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="index.html">Inicio</a>
-            </li>
-            <li class="nav__link-item">
-              <a
-                class="nav__link-routes nav__link-routes--active"
-                href="peliculas.html"
-                >Peliculas</a
-              >
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="series.html">Series</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="animes.html">Animes</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="estrenos.html">En estreno</a>
-            </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="contacto.html">Conctacto</a>
-            </li>
-          </ul>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/snake-eyes.webp"
+              class="card-img-top h-100"
+              alt="Snake eyes"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Snake eyes</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/the-purge-5.jpg"
+              class="card-img-top h-100"
+              alt="The purgue"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The purgue</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/Fauces_de_la_noche.jpg"
+              class="card-img-top h-100"
+              alt="Night teeth"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Night teeth</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/escape-room-2.jpg"
+              class="card-img-top h-100"
+              alt="Scape room 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Scape room 2</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/Kate.jpg"
+              class="card-img-top h-100"
+              alt="Kate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kate</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/Ej_rcito_de_los_muertos.jpg"
+              class="card-img-top h-100"
+              alt="Army of the dead"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Army of the dead</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/palmer.jpg"
+              class="card-img-top h-100"
+              alt="Palmer"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Palmer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/mas_dura_es_la_caida.jpg"
+              class="card-img-top h-100"
+              alt="Harder they fall"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Harder they fall</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/swa9.webp"
+              class="card-img-top h-100"
+              alt="Saw espiral"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Saw: espiral</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/tibur_n_blanco.jpg"
+              class="card-img-top h-100"
+              alt="Great white"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Great white</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="assets/images/peliculas/predator.jpg"
+              class="card-img-top h-100"
+              alt="Predators"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Predators</h5>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <div id="main">
-        
-      </div>
-      
-      <div id="footer" class="dark-bg">
-        <div class="nav d-flex flex-direction align-items margin-auto">
-          <div class="nav__brand d-flex align-items flex-grow-1">
-            <div class="nav__logo">
-              <img src="assets/images/icon-darck.png" alt="movies world" />
-            </div>
-            <div class="nav__titulo">movies world</div>
-          </div>
+    </div>
 
-          <ul class="nav__links d-flex">
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
+    <!-- footer -->
+    <div class="container-fluid bg-dark-bold">
+      <div class="container-md">
+        <div
+          class="
+            d-flex
+            align-items-center
+            flex-column flex-lg-row
+            justify-content-md-between
+          "
+        >
+          <a
+            class="navbar-brand text-white d-flex align-items-center"
+            href="index.html"
+          >
+            <img
+              src="assets/images/icon-darck.png"
+              alt=""
+              width="45"
+              height="45"
+              class="d-inline-block align-text-top me-2"
+            />
+            Moviesworld
+          </a>
+
+          <ul class="d-flex list-unstyled m-0">
+            <li class="mx-1">
+              <a href="" class="text-white">
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
+            <li class="mx-1">
+              <a href="" class="text-white">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
-            <li class="nav__link-item">
-              <a class="nav__link-routes" href="">
+            <li class="mx-1">
+              <a href="" class="text-white">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div
-          class="
-            footer__copyright
-            dark-ligh-bg
-            d-flex
-            align-items
-            justify-content
-          "
-        >
+        <div class="py-2 text-center text-white">
           <p>movies world &copy; copyright 2021</p>
         </div>
       </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
