@@ -1,40 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
-/* .anchor__link{
-    text-decoration: none;
-    transition: all 0.3s ease-in;
-}
-
-.anchor__link:hover{
-    color:#6600FF;
-}
-
-.purple-bg{
-    color: #fff;
-    background: linear-gradient( -90deg, #FF3366,  #6600FF 90%);
-}
-
-.dark-bg{
-    background-color: #000;
-    color: #fff;
-}
-
-.dark-ligh-bg{
-    background-color:#191c1f;
-    color: #fff;
-}
-
-.color-white{
-    color: #fff;
-}
-
-.color-dark{
-    color: #000;
-}
-
-.color-dark-light{
-    color: #191c1f;
-} */
+/* 
+  dark light  #191c1f
+  dark  #000
+  white #fff
+  rosa #FF3366
+  purple #6600FF
+*/
 
 .margin-top-70{
     margin-top: 70px;
@@ -54,22 +26,12 @@
 }
 
 .bg-purple{
-    background: linear-gradient( -90deg, #FF3366,  #6600FF 90%);
+    background: linear-gradient( -70deg, #FF3366,  #6600FF 55%);
 }
 
 .bg-dark-bold{
     background-color: #000;
 }
-
-.shadow-box{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-/* ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-} */
 
 i{
     font-size: 29px;
