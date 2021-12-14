@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-coderhouse-moviesworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon build-css -e scss -x \"npm run buld-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisCastillo77278/moviesworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisCastillo77278/moviesworld/issues"
+  },
+  "homepage": "https://github.com/luisCastillo77278/moviesworld#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
