@@ -88,7 +88,9 @@ i{
 }
 
 .card{
-    transition: all 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
 }
 
 .container-fluid{
