@@ -10,27 +10,27 @@ $font-weight-black: 900;
 body{
     font-family: 'Montserrat', sans-serif;
     .font-weight {
-        font-weight: 200;
+        font-weight: $font-weight-extra-light;
         &-light {
-            font-weight: 300;
+            font-weight: $font-weight-light;
         }
         &-regular {
-            font-weight: 400;
+            font-weight: $font-weight-regular;
         }
         &-medium {
-            font-weight: 500;
+            font-weight: $font-weight-medium;
         }
         &-semi-bold {
-            font-weight: 600;
+            font-weight: $font-weight-semi-bold;
         }
         &-bold {
-            font-weight: 700;
+            font-weight: $font-weight-bold;
         }
         &-extra-bold {
-            font-weight: 800;
+            font-weight: $font-weight-extra-bold;
         }
         &-black {
-            font-weight: 900;
+            font-weight: $font-weight-black;
         }
     }
 }
