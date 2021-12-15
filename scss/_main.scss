@@ -43,40 +43,6 @@ i{
     margin-top: 70px;
 }
 
-.container-fluid{
-    overflow: hidden;
-}
-
-.banner{
-    height: 63vh;
-    position: relative;
-
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgb(0,0,0,0.6);
-      
-    }
-
-    & img{
-        width: 100%;
-        height: 63vh;
-    }
-}
-
-
-.banner-body{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
 .bg-purple{
     background: linear-gradient( -70deg, $color-pink,  $color-purple 55%);
 }
@@ -102,60 +68,8 @@ i{
     background-color: $color-dark;
 }
 
-.genero{
-    position: relative;
-    overflow: hidden;
 
-    .genero-body {
-        position: absolute;
-        top: -100%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0,0,0,0.8);
-        color: $color-white;
-        transition: all 0.5s;
-    }
 
-    @media all and ( min-width:780px ){
-        &:hover .genero-body{
-            left: 0%;
-            top: 0%;
-            color: $color-white;
-        }
-    }
-}
 
-.card{
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-property: all;
-
-    @media all and ( min-width:780px ){
-        &:hover{
-            transform: scale(1.1);
-            position: relative;
-            z-index: 1;
-            margin: 1px;
-        }
-    }
-}
-
-.zoom{
-    animation-name: zoom;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;    
-}
-
-@keyframes zoom{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.1);
-    }
-}
 
 

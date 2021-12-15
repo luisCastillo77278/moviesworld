@@ -1,0 +1,14 @@
+.card{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+
+    @media all and ( min-width:780px ){
+        &:hover{
+            transform: scale(1.1);
+            position: relative;
+            z-index: 1;
+            margin: 1px;
+        }
+    }
+}
