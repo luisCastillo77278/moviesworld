@@ -1,6 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;   
     @each $c, $v in $font-weights{
 
         @if $v == 200{
@@ -36,9 +35,9 @@ i{
 }
 
 .btn-purple{
+    @extend %transition;
     background-color: $color-purple;
     color: $color-white;
-    transition: all 0.5s;
     &:hover{
         background-color: $color-pink;
         color: $color-white;

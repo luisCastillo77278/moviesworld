@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+.card, .btn-purple {
+  transition: all 0.5s ease;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -49,7 +53,6 @@ i {
 .btn-purple {
   background-color: #6600FF;
   color: #fff;
-  transition: all 0.5s;
 }
 .btn-purple:hover {
   background-color: #FF3366;
@@ -90,13 +93,13 @@ i {
 }
 
 .zoom {
-  animation-name: ups4fwq;
+  animation-name: u56usqu;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
-@keyframes ups4fwq {
+@keyframes u56usqu {
   from {
     transform: scale(1);
   }
@@ -105,11 +108,6 @@ i {
   }
 }
 
-.card {
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-property: all;
-}
 @media all and (min-width: 780px) {
   .card:hover {
     transform: scale(1.1);

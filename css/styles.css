@@ -63,7 +63,7 @@ i{
 .btn-purple{
     background-color: #6600FF;
     color: #fff;
-    transition: all 0.5s;
+    transition: all 0.5s ease-in;
 }
 
 .btn-purple:hover{
@@ -92,9 +92,7 @@ i{
 }
 
 .card{
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-property: all;
+    transition: all 0.5s ease-in-out;
 }
 
 .container-fluid{
