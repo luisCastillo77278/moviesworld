@@ -19,7 +19,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Detalle</title>
+    <title>Login</title>
   </head>
   <body>
     <!-- navbar -->
@@ -99,143 +99,60 @@
       </div>
     </div>
 
-    <!-- banner -->
-    <div class="container-fluid px-0 margin-top-70">
-      <div class="banner">
-        <!-- checar la imagen del fondo -->
-        <img src="assets/images/detalle/punisher.jpeg" alt="">
-        <div 
-          class="d-flex
-          text-white
-          flex-column
-          justify-content-end
-          align-items-center
-          text-center
-          banner-body
-          px-5
-          "
-          >
-          <div class="h1">The punisher</div>
-          <div class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptates.</div>
+    <!-- main -->
+    <div class="container-fluid px-0 margin-top-70 login-register">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="col-10 col-md-7 col-xl-5 form my-5 text-white">
+          <form action="">
+            <div class="row px-4 py-3">
+              <div class="col-12 py-2 text-center">
+                <img
+                  src="assets/images/icon-darck.png"
+                  width="100"
+                  height="100"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <div class="font-weight-light">Moviesworld</div>
+              </div>
+              <div class="col-12 pb-2">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="col-12 pb-2">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-12 pb-2">
+                <input type="checkbox" class="form-check-input" id="recordad" />
+                <label class="form-check-label" for="recordad"
+                  >Recordar sesión</label
+                >
+              </div>
+              <div class="col-12 py-3">
+                <div class="d-grid">
+                  <button class="btn btn-purple" type="button">Iniciar</button>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <a href="signup.html" class="color-purple">¿No tienes cuenta? registrate</a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
     <!-- main -->
-
-    <div class="container-fluid px-0 my-4">
-        <div class="container">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link color-purple active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Servidor 1</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link color-purple" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Servidor 2</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link color-purple" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Sevidor 3</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube-nocookie.com/embed/MKw33EBiQQ8?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/j07qIV0VDMI?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/s4QV6OZdmWY?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid px-2 mb-5">
-      <div class="py-2 px-2">
-        <div class="h4 text-secondary">Otras personas han visto</div>
-      </div>
-      <div class="row row-cols-2 row-cols-md-6 justify-content-center g-1 mx-1">
-        <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/sexeducation.jpg"
-                class="card-img-top h-100"
-                alt="Sex education"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Sex education</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/supercroks.webp"
-                class="card-img-top h-100"
-                alt="Super crooks"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Super crooks</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/suits.jpg"
-                class="card-img-top h-100"
-                alt="Suits"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Suits</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/invencible.jpg"
-                class="card-img-top h-100"
-                alt="Legends"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Invencible</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/daredevil.webp"
-                class="card-img-top h-100"
-                alt="Legends"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Daredevil</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/images/series/hawkaye.jpg"
-                class="card-img-top h-100"
-                alt="Legends"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Hawkaye</h5>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
 
     <!-- footer -->
     <div class="container-fluid bg-dark-bold">
