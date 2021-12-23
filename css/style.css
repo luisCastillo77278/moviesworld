@@ -97,11 +97,9 @@ i{
     transition-property: all;
 }
 
-/* 
-esto es requerido y hay que checarlo para el banner
 .container-fluid{
     overflow: hidden;
-} */
+}
 
 .zoom{
     animation-name: zoom;
