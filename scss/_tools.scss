@@ -1,0 +1,22 @@
+@mixin backgroud_img( $img ){
+  background-image:  url('#{$base}/#{$img}');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: center;
+  position: relative;
+}
+
+
+@mixin animation-zoom($duration, $count, $function){
+  $name: #{unique-id()};
+  animation-name: $name;
+  animation-duration: #{$duration}s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: #{$function};    
+  
+  @keyframes #{$name} {
+      @content;
+  }
+}
+
