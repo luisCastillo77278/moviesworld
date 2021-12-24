@@ -92,7 +92,7 @@ i{
 }
 
 .card{
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .container-fluid{
@@ -139,19 +139,57 @@ i{
     }
 }
 
+.card-img-top{
+    height: 40vh;
+    object-fit: cover;
+}
+
+.card-desc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-info{
+    width: 100%;
+    margin: 0px;
+}
+
+.card-category-genres{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+} 
+
+.card-category-genres > div{
+    margin: 0px 10px 0px 0px;
+}
+
+
 @media all and ( min-width:780px ){
     .genero:hover .genero-body{
         left: 0%;
         top: 0%;
         color: #fff;
     }
+ 
 
     .card:hover{
+        /* width: 17%; */
         transform: scale(1.1);
-        position: relative;
+        position: absolute;
         z-index: 1;
-        margin: 1px;
     }
-}
 
+    .card-desc{
+        display: none;
+        transition: all 0.5s;
+    }
+
+    .card:hover .card-desc{
+        display: flex;
+    }
+    
+}
 
