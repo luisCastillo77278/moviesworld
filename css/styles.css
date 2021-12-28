@@ -164,6 +164,8 @@ i{
 
 .card-category-genres > div{
     margin: 0px 10px 0px 0px;
+    background-color: red;
+    padding: 0px;
 }
 
 
